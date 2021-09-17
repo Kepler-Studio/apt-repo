@@ -13,10 +13,10 @@ Suggests: gnupg, unstable-repo, x11-repo
 Priority: extra
 Section: main
 Filename: pool/main/a/apt/apt_2.3.9_aarch64.deb
-Size: 1011916
-SHA256: 0803318b10f4fe9dc0ce79e769bd89835e38a1a3599ebbce2313c16c823eb226
-SHA1: 89ec1681dd966595e0042c920878be4b82d99a4f
-MD5sum: 3df00fae5908aa6960d183fe74d5f6c3
+Size: 1012112
+SHA256: 658ce0a7849b319fa024b40b91b59a1373a86d1b262eaafc0d2b3c0e84c543ab
+SHA1: 192e4a0afdc9ecab2263f2266f8eb9b7dec1aae1
+MD5sum: 13193b526412c5e0f7d73c6d2382b3ed
 Description: Front-end for the dpkg package manager
 
 Package: apt-ftparchive
@@ -29,10 +29,10 @@ Depends: libdb, apt (= 2.3.9)
 Priority: extra
 Section: main
 Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.3.9_aarch64.deb
-Size: 97180
-SHA256: c1191750b54432c996fed798ef544faf5bf79b9a664d95d9a85f96ddba7cc6ca
-SHA1: 6a237c67e0b32ad7d2506f07f0646b9e5a3e5fdc
-MD5sum: ed7b2dcd1f2d4fed05f1ac7e87fd3b0f
+Size: 97468
+SHA256: fd14b9b2800cdca89f407f12084dcf9cce74d29abacbbb06990d9a166a899908
+SHA1: 0d53d023b137f0f207e691466decef27d0d6653b
+MD5sum: 1f28bf1c8605dd036cfe078f08a9eacb
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
 
 Package: apt-transport-tor
@@ -45,10 +45,10 @@ Depends: tor, apt (= 2.3.9)
 Priority: extra
 Section: main
 Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.3.9_all.deb
-Size: 892
-SHA256: be26d0d636204a3463592a4129d036fd26dcdc7e861c25b5db184142ecd14bae
-SHA1: 0114b032ae66282d51d8bb6d136497e8bcf2e295
-MD5sum: 7c712b5883e4c3b15af8b996dacf8963
+Size: 888
+SHA256: 2dd52b93c91a0a7aa1664ad800422f1816efca96f91669922926704791da0c44
+SHA1: b1efe291cb550abe7d7fd8ecd8be77658a1c91bb
+MD5sum: ed00c3988016a1bcda61547786995cef
 Description: APT transport for anonymous package downloads via Tor
 
 Package: bash
@@ -1247,6 +1247,39 @@ SHA1: d1ac2a4620d3796810cd2dd9eb944d69a66c6729
 MD5sum: 6e751d5003c440e4b2006e77557f610c
 Description: Static libraries for libunistring
 
+Package: libuuid
+Architecture: aarch64
+Installed-Size: 28
+Maintainer: @termux
+Version: 1.0.3-4
+Homepage: https://sourceforge.net/projects/libuuid/
+Breaks: libuuid-dev
+Replaces: libuuid-dev
+Priority: extra
+Section: main
+Filename: pool/main/libu/libuuid/libuuid_1.0.3-4_aarch64.deb
+Size: 6508
+SHA256: 17f5fc946adf141934146600a1618cb8a016f9177164dd7e8cbdde8f64a0b05a
+SHA1: 2cb28d82caf0b20d6c1ee1c7cef9502f585fa938
+MD5sum: 3277d91c3f48726ff377b6d803e18cd0
+Description: Portable uuid C library
+
+Package: libuuid-static
+Architecture: aarch64
+Installed-Size: 28
+Maintainer: @termux
+Version: 1.0.3-4
+Homepage: https://sourceforge.net/projects/libuuid/
+Depends: libuuid (= 1.0.3-4)
+Priority: extra
+Section: main
+Filename: pool/main/libu/libuuid-static/libuuid-static_1.0.3-4_aarch64.deb
+Size: 5712
+SHA256: fa0cb70a8e89837ff1df96736f5be2b5b612d47a3b72e1b1cf26612ca8930462
+SHA1: 715b236101a6b5ee740c0fed4312a8ae07f775ce
+MD5sum: 8d18fdfe1e15e9935ecc058a2c43803c
+Description: Static libraries for libuuid
+
 Package: libxml2
 Architecture: aarch64
 Installed-Size: 5288
@@ -1814,6 +1847,22 @@ SHA256: 7fad8b48c92095c43d6c54ce38a81e140169fb978276144b9b5df38029e72190
 SHA1: c9f00e3cbb3362039eaf65f37dcb05f0b2a7dd83
 MD5sum: 95e0120d9f88604dbab8b8644d09b56d
 Description: Static libraries for util-linux
+
+Package: wget
+Architecture: aarch64
+Installed-Size: 692
+Maintainer: @termux
+Version: 1.21.1
+Homepage: https://www.gnu.org/software/wget/
+Depends: libiconv, pcre2, openssl, libuuid, libandroid-support, libunistring, zlib
+Priority: extra
+Section: main
+Filename: pool/main/w/wget/wget_1.21.1_aarch64.deb
+Size: 265024
+SHA256: 4a6ba5c81778e33ca993de7d8bcf4e3090ff780d5cad38b10a8a4fca091df822
+SHA1: 69221734cc946d39797b816e29b2e41ace59e374
+MD5sum: 9ea412938a98b9fa1e61c79e5b658de7
+Description: Commandline tool for retrieving files using HTTP, HTTPS and FTP
 
 Package: xsltproc
 Architecture: aarch64
