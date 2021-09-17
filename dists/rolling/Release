@@ -1,0 +1,17 @@
+Codename: rolling
+Date: Fri, 17 Sep 2021 10:59:16 UTC
+Architectures: aarch64
+Components: main
+Description: Kelper-repository
+MD5Sum:
+ b36a2746c32a3328458762bc833bcf91 59819 main/binary-aarch64/Packages
+ 46400dfc15ca601aee12c0b6ee38b375 18666 main/binary-aarch64/Packages.gz
+ f6e9ef863691bcd32a72cc536866e893 69 main/binary-aarch64/Release
+SHA1:
+ 5ec85c241f4aff07587d5003b372f87af6e5efd1 59819 main/binary-aarch64/Packages
+ a9bd70a129490e27f50f126e35ddac875fec6481 18666 main/binary-aarch64/Packages.gz
+ d15521c5088414391aa477d530a8b9183387a4fb 69 main/binary-aarch64/Release
+SHA256:
+ b2f03347c6706b34a09828590d3351b0c714051ff4157c26928c76af50ee6311 59819 main/binary-aarch64/Packages
+ d9f8b574c650f67f397ade4323e9ae7e162cbcadbe2d40c2800135d6a1baafbd 18666 main/binary-aarch64/Packages.gz
+ c28186bea05975ed9c159e527925067c425e240106bf60e023ceeb8f0bd90679 69 main/binary-aarch64/Release
