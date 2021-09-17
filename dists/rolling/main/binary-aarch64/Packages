@@ -1213,6 +1213,39 @@ SHA1: d6a1f2d6925483383ecb02e575fe5364f24806bc
 MD5sum: 01f511f21d461a5755a4c4dbeca7d053
 Description: Static libraries for libssh2
 
+Package: libtalloc
+Architecture: aarch64
+Installed-Size: 104
+Maintainer: @termux
+Version: 2.3.3
+Homepage: https://talloc.samba.org/talloc/doc/html/index.html
+Breaks: libtalloc-dev
+Replaces: libtalloc-dev
+Priority: extra
+Section: main
+Filename: pool/main/libt/libtalloc/libtalloc_2.3.3_aarch64.deb
+Size: 31740
+SHA256: 228b11f9b6b901cdf998db75f31841817c94eb0f6e8f9a588fa081005b043b67
+SHA1: 4ebf3604eb12cbd4fefe1c41d0bd43d49bc4a34e
+MD5sum: a60059af19e06ba2050ea3db0a8fd62f
+Description: Hierarchical, reference counted memory pool system with destructors
+
+Package: libtalloc-static
+Architecture: aarch64
+Installed-Size: 36
+Maintainer: @termux
+Version: 2.3.3
+Homepage: https://talloc.samba.org/talloc/doc/html/index.html
+Depends: libtalloc (= 2.3.3)
+Priority: extra
+Section: main
+Filename: pool/main/libt/libtalloc-static/libtalloc-static_2.3.3_aarch64.deb
+Size: 10184
+SHA256: ae7bb735a61693819395823b352632d4cf177ac564f3770f8fb0c530e282f7af
+SHA1: 7920d90868377f500fd9dd7555717bddf1364d69
+MD5sum: 77083084a7bde9ab4368d4efea1b303e
+Description: Static libraries for libtalloc
+
 Package: libunistring
 Architecture: aarch64
 Installed-Size: 2680
@@ -1644,6 +1677,22 @@ SHA256: dd67ebebd3465cb27d473df1e3507de62a63ed650c62b3166b15a6fb8bc2ef98
 SHA1: 64f95e5a51da2f6cc05dadec409f0cd6b4d06e7f
 MD5sum: c74081595ccbf569fe1edf8b17d38c24
 Description: Static libraries for procps
+
+Package: proot
+Architecture: aarch64
+Installed-Size: 216
+Maintainer: @termux
+Version: 5.1.107-43
+Homepage: https://proot-me.github.io/
+Depends: libtalloc
+Priority: extra
+Section: main
+Filename: pool/main/p/proot/proot_5.1.107-43_aarch64.deb
+Size: 76964
+SHA256: c803381085399df7398fe9a06f0cd4f858ad81ab3ff5a533a7846f6efbb861bf
+SHA1: 03e46ba8b624ee3fd7b243951a6599300e1b5deb
+MD5sum: 3ef4dcb2070a868db6b8ed864969158d
+Description: Emulate chroot, bind mount and binfmt_misc for non-root users
 
 Package: psmisc
 Architecture: aarch64
