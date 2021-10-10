@@ -1019,6 +1019,22 @@ SHA1: e27973c1f9ab81fdf543684c285c60da6c41205a
 MD5sum: 3b353307bac776ab68301b9863ba5401
 Description: Go programming language - documentation
 
+Package: gperf
+Architecture: aarch64
+Installed-Size: 312
+Maintainer: @termux
+Version: 3.1-4
+Homepage: https://www.gnu.org/software/gperf
+Depends: libc++
+Priority: extra
+Section: main
+Filename: pool/main/g/gperf/gperf_3.1-4_aarch64.deb
+Size: 79688
+SHA256: a140a0850e40e8bfaa048cafab0f8edf241fefe485478767a9c9bfc8c49b26a2
+SHA1: 33447ac4015a3e9f4f61fdd81847d7106c191b1d
+MD5sum: cfdab800c1bbcae71d768e360977c7a4
+Description: A perfect hash function generator
+
 Package: gpgv
 Architecture: aarch64
 Installed-Size: 380
@@ -1067,6 +1083,22 @@ SHA256: 321ec41dab1818b07b16cd669236e1d2cec197a7a6f7496816b69464af9f75ae
 SHA1: 6cfcb13bcaef9295f312e5065fd98e12fcfc4217
 MD5sum: f70f94ea5dc372015fab6fc3b2a2add6
 Description: Standard GNU file compression utilities
+
+Package: help2man
+Architecture: all
+Installed-Size: 44
+Maintainer: @termux
+Version: 1.48.3
+Homepage: https://www.gnu.org/software/help2man/
+Depends: perl
+Priority: extra
+Section: main
+Filename: pool/main/h/help2man/help2man_1.48.3_all.deb
+Size: 15692
+SHA256: 66dba663a2c00ed55e30701c6b805ad7e60d29122c013316928ebbef98bf474d
+SHA1: 2183e257d365e6aba13fe79036b3f49d17477467
+MD5sum: d9528a18376a2368ad6e91a28c9a85cc
+Description: Conversion tool to create man files.
 
 Package: iconv
 Architecture: aarch64
@@ -1167,6 +1199,37 @@ SHA256: f0e614614951b947ffe501322891e43e3df124bf8d5df7b59039ce7c1eb1c7c3
 SHA1: 9ade6517db44681bdd599670446c9655585af20a
 MD5sum: 346a1f82934f50e88a07e312135c89d1
 Description: Static libraries for libandroid-glob
+
+Package: libandroid-spawn
+Architecture: aarch64
+Installed-Size: 48
+Maintainer: @termux
+Version: 0.2-4
+Homepage: https://man7.org/linux/man-pages/man3/posix_spawn.3.html
+Priority: extra
+Section: main
+Filename: pool/main/liba/libandroid-spawn/libandroid-spawn_0.2-4_aarch64.deb
+Size: 15212
+SHA256: 8b7200c9f276d98de83df37a837aa92e380b12446a7eefaba894f5c45719eaac
+SHA1: 7a972c468548be52eb52d068fbabce83280183f6
+MD5sum: 993254e08923a8ccd34b02a0dee4b013
+Description: Shared library for the posix_spawn system function
+
+Package: libandroid-spawn-static
+Architecture: aarch64
+Installed-Size: 12
+Maintainer: @termux
+Version: 0.2-4
+Homepage: https://man7.org/linux/man-pages/man3/posix_spawn.3.html
+Depends: libandroid-spawn (= 0.2-4)
+Priority: extra
+Section: main
+Filename: pool/main/liba/libandroid-spawn-static/libandroid-spawn-static_0.2-4_aarch64.deb
+Size: 3880
+SHA256: e32494c6b990ae231a997ea80529e05d2ebbeae36adade395fe76c1f8e1a6955
+SHA1: cd926229f1b1b65e1434c6f4fc4e1fd163ddd22a
+MD5sum: 7eab2d2df49e0f843035d4555ce8d85c
+Description: Static libraries for libandroid-spawn
 
 Package: libandroid-support
 Architecture: aarch64
@@ -1827,6 +1890,21 @@ SHA1: f123c1a7a5e4ed3bab212377bdc1a2ecb2096c76
 MD5sum: 055ddff1502bcb1192d6029cf52c1ab7
 Description: Static libraries for libllvm
 
+Package: libltdl
+Architecture: aarch64
+Installed-Size: 36
+Maintainer: @termux
+Version: 2.4.6-8
+Homepage: https://www.gnu.org/software/libtool/
+Priority: extra
+Section: main
+Filename: pool/main/libl/libltdl/libltdl_2.4.6-8_aarch64.deb
+Size: 12456
+SHA256: 3156196ca38a0e56985617fc388722caea96b4703bc37cdbca1f14f80e421f5e
+SHA1: c2a6a416feeb2c1b3ec67f7c3796e38b9cfc4c65
+MD5sum: c9560e4cd841384460af17aef81bcac1
+Description: Library for dlopening libraries
+
 Package: liblz4
 Architecture: aarch64
 Installed-Size: 240
@@ -2194,6 +2272,24 @@ SHA256: ae7bb735a61693819395823b352632d4cf177ac564f3770f8fb0c530e282f7af
 SHA1: 7920d90868377f500fd9dd7555717bddf1364d69
 MD5sum: 77083084a7bde9ab4368d4efea1b303e
 Description: Static libraries for libtalloc
+
+Package: libtool
+Architecture: aarch64
+Installed-Size: 2632
+Maintainer: @termux
+Version: 2.4.6-8
+Homepage: https://www.gnu.org/software/libtool/
+Depends: bash, grep, sed, libltdl
+Conflicts: libtool-dev, libtool-static
+Replaces: libtool-dev, libtool-static
+Priority: extra
+Section: main
+Filename: pool/main/libt/libtool/libtool_2.4.6-8_aarch64.deb
+Size: 375312
+SHA256: e6c63f050b64a1dd04689ca5acd6cdcf72c64b9215581dc0fcc42e1df14624be
+SHA1: 122ec84152dea5a32797a99cf93e769e077d0d5f
+MD5sum: 12ab74e76e3253c1c206cc418ff0aee0
+Description: Generic library support script hiding the complexity of using shared libraries behind a consistent, portable interface
 
 Package: libunistring
 Architecture: aarch64
@@ -2914,6 +3010,22 @@ SHA1: 9fe6ca35db6a2459e76bf3b979988f98decd3be2
 MD5sum: 24b23a82561575339411dfee42923c2c
 Description: Low level cryptographic tools
 
+Package: ninja
+Architecture: aarch64
+Installed-Size: 152
+Maintainer: @termux
+Version: 1.10.2
+Homepage: https://ninja-build.org
+Depends: libc++, libandroid-spawn
+Priority: extra
+Section: main
+Filename: pool/main/n/ninja/ninja_1.10.2_aarch64.deb
+Size: 52552
+SHA256: 52de8d581bfb30e1fa575d73ee1aa75003d280f0bccc579f930b2c8a6feae193
+SHA1: acfc95b6fd50aa6a61d9587b490c1206c88bfb02
+MD5sum: f062dce0438fcdfcfa69157a2d1bf1a3
+Description: A small build system with a focus on speed
+
 Package: openssl
 Architecture: aarch64
 Installed-Size: 4120
@@ -3076,6 +3188,22 @@ SHA256: b8efdc33a81f98c4ad687e50e0bcce1ae95e101c0f5873b1bbc3ee3d9124b0c1
 SHA1: 16405df7df08aa7adbb2467d718fa55c20c4e973
 MD5sum: dba944da6e6d19654f6aa10b4d48626b
 Description: Dialog allowing secure password entry
+
+Package: pkg-config
+Architecture: aarch64
+Installed-Size: 84
+Maintainer: @termux
+Version: 0.29.2
+Homepage: https://www.freedesktop.org/wiki/Software/pkg-config/
+Depends: glib
+Priority: extra
+Section: main
+Filename: pool/main/p/pkg-config/pkg-config_0.29.2_aarch64.deb
+Size: 30880
+SHA256: c7df8de69fbfe5408c8b4024478b471e4a1a84a8f7d7c61530d43140dc82b248
+SHA1: a14d7a269cd9cab23b746124a47c7c5207ad0085
+MD5sum: 55fa6a6bd107b7e2dc5123fb5095cffb
+Description: Helper tool used when compiling applications and libraries
 
 Package: procps
 Architecture: aarch64
