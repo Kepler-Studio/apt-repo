@@ -136,6 +136,22 @@ SHA1: 325b7bef8d98c47697829bc6ccfc40ba7ab8c9cc
 MD5sum: 82b7cfd3b8e1658b82b588fd5b1081ea
 Description: Text document format for short documents, articles, books and UNIX man pages.
 
+Package: asciidoctor
+Architecture: all
+Installed-Size: 5896
+Maintainer: @termux
+Version: 2.0.15
+Homepage: https://asciidoctor.org/
+Depends: ruby
+Priority: extra
+Section: main
+Filename: pool/main/a/asciidoctor/asciidoctor_2.0.15_all.deb
+Size: 583188
+SHA256: 6fa9e3685f9e34b134437cf50c10e7a03e8ffef20a035f17507e4e52e64d4c72
+SHA1: 1d28a58e9590ef5130b51c5e1f21516baa2ca3c7
+MD5sum: 41028d6ad456bc19673ce61cd4d84203
+Description: An implementation of AsciiDoc in Ruby
+
 Package: bash
 Architecture: aarch64
 Installed-Size: 3964
@@ -606,10 +622,10 @@ Replaces: gdbm-dev
 Priority: extra
 Section: main
 Filename: pool/main/g/gdbm/gdbm_1.20_aarch64.deb
-Size: 106676
-SHA256: 4e0daa8f174c71c5a5a1412a1004c40ce565817e4516f4abc52b4aed19503d11
-SHA1: b65dc6cfe7ab11bcf98b42faada8013c80082243
-MD5sum: 4b011ef98b7bfb54a0428145706c2d00
+Size: 106572
+SHA256: 4f35ca7c0e872177188e5976992e2b348dd3afc700c927b3e5ca01a37f4f93a6
+SHA1: a28599a541d17911c788d691c0447211e7caa1ca
+MD5sum: 8e82302aaa5160ae22d1c5be0296470d
 Description: Library of database functions that use extensible hashing
 
 Package: gdbm-static
@@ -622,10 +638,10 @@ Depends: gdbm (= 1.20)
 Priority: extra
 Section: main
 Filename: pool/main/g/gdbm-static/gdbm-static_1.20_aarch64.deb
-Size: 27248
-SHA256: 6675b2b0625e13d9865aaed34610d5eaed6b99c4c2e20ac9b1523bf6286b1357
-SHA1: a210881ffd1c43b3a0f6d31e37e10d56a66ed739
-MD5sum: eb7330e1d0fa174340d8ea0319b1a646
+Size: 27244
+SHA256: 41baaebd9ce6d2c7fa868a0eb3fe10cacba1fdb661286041e24c28e9a1a33f98
+SHA1: 4de408836a6d72039c6dc14e0d2911acca70fab3
+MD5sum: 3288d19843e03fb0c95122a7a6d7ce69
 Description: Static libraries for gdbm
 
 Package: git
@@ -2207,6 +2223,39 @@ SHA1: 3d6f4fe8053a245b53d0f7cb8bd08421fbfa9693
 MD5sum: 64f97647dbbae1f17acaac1403d7a451
 Description: Static libraries for libxss
 
+Package: libyaml
+Architecture: aarch64
+Installed-Size: 152
+Maintainer: @termux
+Version: 0.2.5-4
+Homepage: https://pyyaml.org/wiki/LibYAML
+Breaks: libyaml-dev
+Replaces: libyaml-dev
+Priority: extra
+Section: main
+Filename: pool/main/liby/libyaml/libyaml_0.2.5-4_aarch64.deb
+Size: 43592
+SHA256: 904b5fd99ed99127e4e678118d496da14ed267573f4c6f6277705322a5fd6567
+SHA1: 2de4772f1d764bd6fead00424eb1b7241644108c
+MD5sum: dd6751611d763fe640843cabba21cee7
+Description: LibYAML is a YAML 1.1 parser and emitter written in C
+
+Package: libyaml-static
+Architecture: aarch64
+Installed-Size: 176
+Maintainer: @termux
+Version: 0.2.5-4
+Homepage: https://pyyaml.org/wiki/LibYAML
+Depends: libyaml (= 0.2.5-4)
+Priority: extra
+Section: main
+Filename: pool/main/liby/libyaml-static/libyaml-static_0.2.5-4_aarch64.deb
+Size: 43064
+SHA256: f0f45fcbd525a7f2001eb9d917a70e9e31d7f6f7b3b5b1a2ae5133fb0d49951c
+SHA1: b4db39a57c35c27cebc61f0cc76832169b5d8914
+MD5sum: b7b32692440548fdfbb4dbf94259fb77
+Description: Static libraries for libyaml
+
 Package: lld
 Architecture: aarch64
 Installed-Size: 17020
@@ -2753,6 +2802,41 @@ SHA256: 0c0a8214129f3be91e42e30d933beb4a248e2825ede65e28ab097444d98aa5af
 SHA1: 9b2b8bde8e983c4cc589f4272172301c91d30e12
 MD5sum: 0d48138ecc78aade7aadeca07a45c1f0
 Description: Resolver configuration file
+
+Package: ruby
+Architecture: aarch64
+Installed-Size: 28056
+Maintainer: @termux
+Version: 3.0.2-4
+Homepage: https://www.ruby-lang.org/
+Breaks: ruby-dev
+Depends: gdbm, libandroid-support, libffi, libgmp, readline, openssl, libyaml, zlib
+Recommends: clang, make, pkg-config
+Replaces: ruby-dev
+Priority: extra
+Section: main
+Filename: pool/main/r/ruby/ruby_3.0.2-4_aarch64.deb
+Size: 5509148
+SHA256: f257e14eefddfdacd8593fba7e3dd4051cebbd3900246677261cc2440b07abf6
+SHA1: 56ba4cd25d47b92280b8c265571d893c92ca6de7
+MD5sum: b034507fad957cb1e3c01b76233a02c6
+Description: Dynamic programming language with a focus on simplicity and productivity
+
+Package: ruby-ri
+Architecture: all
+Installed-Size: 51224
+Maintainer: @termux
+Version: 3.0.2-4
+Homepage: https://www.ruby-lang.org/
+Depends: ruby (= 3.0.2-4)
+Priority: extra
+Section: main
+Filename: pool/main/r/ruby-ri/ruby-ri_3.0.2-4_all.deb
+Size: 1587748
+SHA256: 2af1f093298528ee3122b05e633dfb4fdd521fbe00b849091f36e8e0ac217eb1
+SHA1: f2c1acb4878219550b9db8a1bf45d6dea030249b
+MD5sum: 2ddd10ffb4ea1585524c33c37e42579d
+Description: Ruby documentation index
 
 Package: sed
 Architecture: aarch64
