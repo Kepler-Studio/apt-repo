@@ -577,6 +577,40 @@ SHA1: 30821d6e92b52812ccaa346fc10f6dabd744a220
 MD5sum: 4613ca4642a171227e1177c9b24ea76b
 Description: Static libraries for gawk
 
+Package: gdbm
+Architecture: aarch64
+Installed-Size: 376
+Maintainer: @termux
+Version: 1.20
+Homepage: https://www.gnu.org.ua/software/gdbm/
+Breaks: gdbm-dev
+Depends: readline
+Replaces: gdbm-dev
+Priority: extra
+Section: main
+Filename: pool/main/g/gdbm/gdbm_1.20_aarch64.deb
+Size: 106640
+SHA256: 3a35baaeb067c88883f4bd248b69747f181950e1c504c39f4132fcb827ea78cf
+SHA1: 47cb57bdd92ee845ffc6eae9f79104e56a259fc6
+MD5sum: 2be799a5b8417a3b3f409dc0df545eb3
+Description: Library of database functions that use extensible hashing
+
+Package: gdbm-static
+Architecture: aarch64
+Installed-Size: 136
+Maintainer: @termux
+Version: 1.20
+Homepage: https://www.gnu.org.ua/software/gdbm/
+Depends: gdbm (= 1.20)
+Priority: extra
+Section: main
+Filename: pool/main/g/gdbm-static/gdbm-static_1.20_aarch64.deb
+Size: 27236
+SHA256: 04947b8b1f350ba424770870a3cd125a71d2a42eeff8cf4d8b07c4ed5eddcf4a
+SHA1: 2d875faf19a352efcb678a753a1f730f5cc7fa59
+MD5sum: 967f1718fb84428cc055a5d2adac6315
+Description: Static libraries for gdbm
+
 Package: git
 Architecture: aarch64
 Installed-Size: 12924
@@ -2224,6 +2258,22 @@ SHA1: 871726797da496a49bdcab6c59b40e01b93eff1f
 MD5sum: 79379247c397fc3f3f8a4aaedf54df84
 Description: Fast LZ compression algorithm tool
 
+Package: lzip
+Architecture: aarch64
+Installed-Size: 172
+Maintainer: @termux
+Version: 1.22
+Homepage: https://www.nongnu.org/lzip/
+Depends: libc++
+Priority: extra
+Section: main
+Filename: pool/main/l/lzip/lzip_1.22_aarch64.deb
+Size: 61636
+SHA256: df76034557f211a026cab2327dae87d73ad3918f1201118600db639fb3e5ec6e
+SHA1: 4a692f994d5da9b6ab098f437910405b9b082d45
+MD5sum: 2e28e64ad71f9f04438e12c162e129ab
+Description: Lossless data compressor similar to gzip and bzip2
+
 Package: nano
 Architecture: aarch64
 Installed-Size: 796
@@ -2414,10 +2464,10 @@ Homepage: https://savannah.gnu.org/projects/patch/
 Priority: extra
 Section: main
 Filename: pool/main/p/patch/patch_2.7.6-3_aarch64.deb
-Size: 76648
-SHA256: ab87f74663e35940ebaca4626ed7f30e3f6cd35f74257f6c376735a6ada9620c
-SHA1: 57c189ee42d28bd1fb54a8f2aaf48c443324b7c1
-MD5sum: f4fc9fdc7f27a8b5272be1f97d5207c4
+Size: 76676
+SHA256: 31aecfdd15b8c2f5720ebd39b4f5246faf0fd85d756506a885adc4b75e43699f
+SHA1: a5f71c062d72d4098a62c79b974cd63dd2370930
+MD5sum: 69725c3a42f45b6b179df5e448f39f8f
 Description: GNU patch which applies diff files to create patched files
 
 Package: pcre
@@ -2584,6 +2634,59 @@ SHA256: dddbf24e3b8ace6a402334e3d586b435d92919beec8b068ee0ca6a5a26140369
 SHA1: 7db24633ea86c580733015d6b536e95fb162a04a
 MD5sum: e3d1690c6925fa4d30dc8eb001598499
 Description: Some small useful utilities that use the proc filesystem
+
+Package: python
+Architecture: aarch64
+Installed-Size: 47128
+Maintainer: @termux
+Version: 3.9.7
+Homepage: https://python.org/
+Breaks: python2 (<= 2.7.15), python-dev
+Depends: gdbm, libandroid-support, libbz2, libcrypt, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: clang, make, pkg-config
+Replaces: python-dev
+Provides: python3
+Suggests: python-tkinter
+Priority: extra
+Section: main
+Filename: pool/main/p/python/python_3.9.7_aarch64.deb
+Size: 7996276
+SHA256: e8e58228eab768286a11beb4a01f3faa1372c731661bdc6ba7c19fe9fd3d8940
+SHA1: 2c06f367079fb5bad57ed21d8d768a71acd544c7
+MD5sum: 0e6b2499ae416ef4c5fd33ad7d5df80a
+Description: Python 3 programming language intended to enable clear programs
+
+Package: python-static
+Architecture: aarch64
+Installed-Size: 21180
+Maintainer: @termux
+Version: 3.9.7
+Homepage: https://python.org/
+Depends: python (= 3.9.7)
+Priority: extra
+Section: main
+Filename: pool/main/p/python-static/python-static_3.9.7_aarch64.deb
+Size: 3575348
+SHA256: a6e1749f1e94510dbe2fc76030ae1f3a7afb93fd05bcf46fd561dec657603f77
+SHA1: 641999fc45f4fc465d91995cc8f61fab516b8d01
+MD5sum: 91bd220f0152a6a4786e0101da37810b
+Description: Static libraries for python
+
+Package: python-tkinter
+Architecture: aarch64
+Installed-Size: 7852
+Maintainer: @termux
+Version: 3.9.7
+Homepage: https://python.org/
+Depends: tk, python (= 3.9.7)
+Priority: extra
+Section: main
+Filename: pool/main/p/python-tkinter/python-tkinter_3.9.7_aarch64.deb
+Size: 874948
+SHA256: 1e0d7c1da0e4bbf9371c5c47396aa262e333d65ca744f22d41c205f379b5bc13
+SHA1: fab03b8d3e8b21e3dd98a233d2a95d5c1d1245c3
+MD5sum: f09ad1c1f52db0318bed85bdd59d75aa
+Description: Tkinter support for Python 3
 
 Package: readline
 Architecture: aarch64
@@ -2884,6 +2987,22 @@ SHA256: eed6e86734827ceea503c16dfa71e8af5393243818d58d955657ad3ff21dd4c4
 SHA1: 79425fc1cac3117c17723c745dc02b67ae313e85
 MD5sum: 4b8164ddb81f47e677e4e46eef97c91a
 Description: Font family based on the Bitstream Vera Fonts with a wider range of characters
+
+Package: unzip
+Architecture: aarch64
+Installed-Size: 272
+Maintainer: @termux
+Version: 6.0-7
+Homepage: https://sourceforge.net/projects/infozip/
+Depends: libbz2
+Priority: extra
+Section: main
+Filename: pool/main/u/unzip/unzip_6.0-7_aarch64.deb
+Size: 112516
+SHA256: 984e1226f149c8fd0245a81cbd843118d7ea5a2a9ad8414efd0278c651c9a6ea
+SHA1: e127c96b55eda211cdcb019b608233385bfa1371
+MD5sum: e376c53975d3a89ce37646f001a75d02
+Description: Tools for working with zip files
 
 Package: utf8proc
 Architecture: aarch64
