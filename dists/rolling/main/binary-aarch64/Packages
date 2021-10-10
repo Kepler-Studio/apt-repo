@@ -855,6 +855,56 @@ SHA1: 207371bdc655a7b2b9958f332715755617df4035
 MD5sum: d7c163bf25378ad1198bdf460f6b6219
 Description: Static libraries for gettext
 
+Package: giflib
+Architecture: aarch64
+Installed-Size: 56
+Maintainer: @termux
+Version: 5.2.1-2
+Homepage: https://sourceforge.net/projects/giflib/
+Breaks: giflib-dev
+Replaces: giflib-dev
+Priority: extra
+Section: main
+Filename: pool/main/g/giflib/giflib_5.2.1-2_aarch64.deb
+Size: 17012
+SHA256: 94849d39ad65aaa2d96017557108c039ee627c34252a2da0aa5a5801a0ad389e
+SHA1: 7825fe7ce42c4f7bcc7f2e7fa2a17c57114b9153
+MD5sum: bf75f1c13052f9471389ecbe49291e53
+Description: A library for reading and writing gif images
+
+Package: giflib-static
+Architecture: aarch64
+Installed-Size: 44
+Maintainer: @termux
+Version: 5.2.1-2
+Homepage: https://sourceforge.net/projects/giflib/
+Depends: giflib (= 5.2.1-2)
+Priority: extra
+Section: main
+Filename: pool/main/g/giflib-static/giflib-static_5.2.1-2_aarch64.deb
+Size: 13544
+SHA256: 3f31941b4a44497d8856cc864a835e0b664b3e323fbc29511112daed1e0832b1
+SHA1: 886033235e9f3a9c0bf5f34bea6f1947e5361e8d
+MD5sum: 5bb753be88f36ac0488c5983f678f57e
+Description: Static libraries for giflib
+
+Package: giflib-utils
+Architecture: aarch64
+Installed-Size: 268
+Maintainer: @termux
+Version: 5.2.1-2
+Homepage: https://sourceforge.net/projects/giflib/
+Depends: giflib (= 5.2.1-2)
+Conflicts: giflib (<< 5.1.4-4)
+Priority: extra
+Section: main
+Filename: pool/main/g/giflib-utils/giflib-utils_5.2.1-2_aarch64.deb
+Size: 51764
+SHA256: 158a6466413dbf330982ea8a6ca0b220440f649a99efc492c95bbe5ec5b70490
+SHA1: 8dc682d35d8d2b0ca3e4311d19cd95b4771de11c
+MD5sum: 1200cf4989f38e60c841f18f32ef7035
+Description: A set of utilities that comes with giflib package
+
 Package: git
 Architecture: aarch64
 Installed-Size: 12924
@@ -1366,6 +1416,40 @@ SHA1: 2acba8bc61545abb07517b6b8156bb693a44ace2
 MD5sum: 406ebc4a388e20a370cc95e57501d2cc
 Description: C++ Standard Library
 
+Package: libcairo
+Architecture: aarch64
+Installed-Size: 1312
+Maintainer: @termux
+Version: 1.16.0-7
+Homepage: https://cairographics.org
+Breaks: libcairo-dev, libcairo-gobject
+Depends: fontconfig, freetype, glib, liblzo, libpixman, libpng, libx11, libxcb, libxext, libxrender, zlib
+Replaces: libcairo-dev, libcairo-gobject
+Priority: extra
+Section: main
+Filename: pool/main/libc/libcairo/libcairo_1.16.0-7_aarch64.deb
+Size: 406100
+SHA256: c0f39d7275a4fd570ee59d5e6d1e3556ee067d9ee86b0491c4f271ca3e7cd48a
+SHA1: f3dcccf67024c722edef97203ca5de49fb567602
+MD5sum: 7dbfdc8cfa54e4d80096e8ea143447cd
+Description: Cairo 2D vector graphics library
+
+Package: libcairo-static
+Architecture: aarch64
+Installed-Size: 2416
+Maintainer: @termux
+Version: 1.16.0-7
+Homepage: https://cairographics.org
+Depends: libcairo (= 1.16.0-7)
+Priority: extra
+Section: main
+Filename: pool/main/libc/libcairo-static/libcairo-static_1.16.0-7_aarch64.deb
+Size: 510828
+SHA256: 3b44b29ea44ad47e93d6c8fef48bcf549bc50828fa69190cd9594d3bccc26b74
+SHA1: 01c782662a2fd4f2c5bb633728edd80b7956d5ce
+MD5sum: 65f8c319cf601e6a731809e0159c0b20
+Description: Static libraries for libcairo
+
 Package: libcompiler-rt
 Architecture: aarch64
 Installed-Size: 29004
@@ -1654,6 +1738,40 @@ SHA1: da6095391cee3d76028ff324ca90a2f665676911
 MD5sum: ad78fb02a93dc70f6527804c600bfa9e
 Description: Static libraries for libgcrypt
 
+Package: libgd
+Architecture: aarch64
+Installed-Size: 596
+Maintainer: @termux
+Version: 2.3.3-1
+Homepage: https://libgd.github.io/
+Breaks: libgd-dev
+Depends: freetype, fontconfig, libiconv, libjpeg-turbo, libpng, libtiff, libwebp, zlib
+Replaces: libgd-dev
+Priority: extra
+Section: main
+Filename: pool/main/libg/libgd/libgd_2.3.3-1_aarch64.deb
+Size: 114424
+SHA256: 03be09710bb88b021857064a3f5bf44a7394cec450092c0c0244a315ea85cb06
+SHA1: a8f98b8b9ac52d2cf2290757c4048f0d94ad25dc
+MD5sum: af8cd94a7c308609a9b2a1c61d7d4106
+Description: GD is an open source code library for the dynamic creation of images by programmers
+
+Package: libgd-static
+Architecture: aarch64
+Installed-Size: 480
+Maintainer: @termux
+Version: 2.3.3-1
+Homepage: https://libgd.github.io/
+Depends: libgd (= 2.3.3-1)
+Priority: extra
+Section: main
+Filename: pool/main/libg/libgd-static/libgd-static_2.3.3-1_aarch64.deb
+Size: 95092
+SHA256: 76bfd32e706d00ac52fad358d56bcc7c1f7d3d40fdc27d172dcd383afc9d4fb7
+SHA1: 2ab527ec125dcf49cd1962fbd17624b54b0d7ec1
+MD5sum: 78ded204bbd49a104a9ec0ce88d00445
+Description: Static libraries for libgd
+
 Package: libgmp
 Architecture: aarch64
 Installed-Size: 1148
@@ -1821,6 +1939,55 @@ SHA1: 6852a78ff4362917d246121bbf93e86483d94ff3
 MD5sum: 004e9f2e7ccff1b94ad474333d6559bd
 Description: Static libraries for libidn2
 
+Package: libjpeg-turbo
+Architecture: aarch64
+Installed-Size: 1332
+Maintainer: @termux
+Version: 2.1.1
+Homepage: https://libjpeg-turbo.virtualgl.org
+Breaks: libjpeg-turbo-dev
+Replaces: libjpeg-turbo-dev
+Priority: extra
+Section: main
+Filename: pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.1_aarch64.deb
+Size: 279284
+SHA256: 152c601a1c204d8f5bcb5fc750031fd24457a0c8b28600c7ef5ee0511cb8cae6
+SHA1: 443d12faffcebcdee50ac23a8148d2e1d8018f26
+MD5sum: 07b80e5f3eb0951e5b011105348cea19
+Description: Library for reading and writing JPEG image files
+
+Package: libjpeg-turbo-progs
+Architecture: aarch64
+Installed-Size: 256
+Maintainer: @termux
+Version: 2.1.1
+Homepage: https://libjpeg-turbo.virtualgl.org
+Depends: libjpeg-turbo (= 2.1.1)
+Priority: extra
+Section: main
+Filename: pool/main/libj/libjpeg-turbo-progs/libjpeg-turbo-progs_2.1.1_aarch64.deb
+Size: 79296
+SHA256: 1f12be872a15edbf074cbe4ba74cea16d285b0e0925d22acb01a0f2d195d5857
+SHA1: bdec87fcad4789b0fb3445709d5a3b2a64d4b80f
+MD5sum: 76afc2dcc274a76498d82f9be9f135a2
+Description: Programs for manipulating JPEG files
+
+Package: libjpeg-turbo-static
+Architecture: aarch64
+Installed-Size: 1112
+Maintainer: @termux
+Version: 2.1.1
+Homepage: https://libjpeg-turbo.virtualgl.org
+Depends: libjpeg-turbo (= 2.1.1)
+Priority: extra
+Section: main
+Filename: pool/main/libj/libjpeg-turbo-static/libjpeg-turbo-static_2.1.1_aarch64.deb
+Size: 173804
+SHA256: 0670e3898359069595ab30b6a67bbd572954023db0f1511ddb5072fe007610da
+SHA1: c308f4e2b3d2d69b2f117c3e7645bed4e098cf5c
+MD5sum: e7c9db9aa4525002d84c8854d1d98636
+Description: Static libraries for libjpeg-turbo
+
 Package: libksba
 Architecture: aarch64
 Installed-Size: 316
@@ -1972,6 +2139,39 @@ SHA1: e8efaf5e0bb70446e37c692524fb5c3a7a2945f8
 MD5sum: 39941942d04e89d5a4c099377575f2af
 Description: Static libraries for liblzma
 
+Package: liblzo
+Architecture: aarch64
+Installed-Size: 388
+Maintainer: @termux
+Version: 2.10-2
+Homepage: http://www.oberhumer.com/opensource/lzo
+Breaks: liblzo-dev
+Replaces: liblzo-dev
+Priority: extra
+Section: main
+Filename: pool/main/libl/liblzo/liblzo_2.10-2_aarch64.deb
+Size: 65052
+SHA256: 5c44153ad26e3958435f22d18c1efd079a9e073e9aabf7de994fc154fa1b2232
+SHA1: d69eec67ad4494a07ba54bea2d29ea7979f061bb
+MD5sum: ea578bcb50d24cb2072346edd242bc5f
+Description: Portable lossless data compression library
+
+Package: liblzo-static
+Architecture: aarch64
+Installed-Size: 180
+Maintainer: @termux
+Version: 2.10-2
+Homepage: http://www.oberhumer.com/opensource/lzo
+Depends: liblzo (= 2.10-2)
+Priority: extra
+Section: main
+Filename: pool/main/libl/liblzo-static/liblzo-static_2.10-2_aarch64.deb
+Size: 30604
+SHA256: 251dbc037b1984e3ba539f9ca824f43e0efcb09ab3caf03683d2dbcc0ea5954a
+SHA1: 1f2a0cc74bd41c56fc72b264d13fb2b334a581e9
+MD5sum: 82351cea9c6e5aec18c51115a334ef7c
+Description: Static libraries for liblzo
+
 Package: libmpfr
 Architecture: aarch64
 Installed-Size: 872
@@ -2122,6 +2322,39 @@ SHA1: 615134d65a341c7a6e4565f58b5ae89fa33946dc
 MD5sum: 2d7734e2248cd4b3ae24bcd75e204745
 Description: Posix-compatible runtime libraries for libpcre
 
+Package: libpixman
+Architecture: aarch64
+Installed-Size: 340
+Maintainer: @termux
+Version: 0.40.0-1
+Homepage: http://www.pixman.org/
+Breaks: libpixman-dev
+Replaces: libpixman-dev
+Priority: extra
+Section: main
+Filename: pool/main/libp/libpixman/libpixman_0.40.0-1_aarch64.deb
+Size: 113764
+SHA256: 04845d395dceb731b0e428d2a11e1476e3e36de612b78101eb0b8552d602171f
+SHA1: 310f4805ce68995dffd82472607e3b1db9e44451
+MD5sum: 40a3ba85c1fafb72103084a432d4f2ea
+Description: Low-level library for pixel manipulation
+
+Package: libpixman-static
+Architecture: aarch64
+Installed-Size: 480
+Maintainer: @termux
+Version: 0.40.0-1
+Homepage: http://www.pixman.org/
+Depends: libpixman (= 0.40.0-1)
+Priority: extra
+Section: main
+Filename: pool/main/libp/libpixman-static/libpixman-static_0.40.0-1_aarch64.deb
+Size: 124916
+SHA256: cb2b52c71690bed221f95f42958b040ab2dbdfab179bf3d8085c3e2ce0220dae
+SHA1: 65a4f1adfb3b785ef444b4b59feee83401eaed8c
+MD5sum: e7c3d9bbd541c7f63cde7742acd74dc3
+Description: Static libraries for libpixman
+
 Package: libpng
 Architecture: aarch64
 Installed-Size: 424
@@ -2171,6 +2404,24 @@ SHA256: 822f4940b5e15515ac9682b261a00b58d6c11ff8c807858e017d47c4e4032f50
 SHA1: 79116bde524d3dfc6ae7fce41a9598ae848c953a
 MD5sum: 735cb34e4af807bf9e6da403e7fce4cd
 Description: High-level loop and data-locality optimizer for clang
+
+Package: libprotobuf
+Architecture: aarch64
+Installed-Size: 5840
+Maintainer: @termux
+Version: 2:3.18.0
+Homepage: https://github.com/protocolbuffers/protobuf
+Breaks: libprotobuf-dev
+Depends: libc++, zlib
+Replaces: libprotobuf-dev
+Priority: extra
+Section: main
+Filename: pool/main/libp/libprotobuf/libprotobuf_3.18.0_aarch64.deb
+Size: 978728
+SHA256: f27370979d393c27f5dfb195a5d8fb2b65039cba246da86ddb41ae09072ad9ff
+SHA1: 844b6734a4a51e9f5de4a6395916c0b1fb4f3bcf
+MD5sum: 8c29c87166f3843b4e56f93c2ebe9239
+Description: Protocol buffers C++ library
 
 Package: libsqlite
 Architecture: aarch64
@@ -2272,6 +2523,56 @@ SHA256: ae7bb735a61693819395823b352632d4cf177ac564f3770f8fb0c530e282f7af
 SHA1: 7920d90868377f500fd9dd7555717bddf1364d69
 MD5sum: 77083084a7bde9ab4368d4efea1b303e
 Description: Static libraries for libtalloc
+
+Package: libtiff
+Architecture: aarch64
+Installed-Size: 2380
+Maintainer: @termux
+Version: 4.3.0
+Homepage: http://www.simplesystems.org/libtiff/
+Breaks: libtiff-dev
+Depends: libc++, libjpeg-turbo, liblzma, zlib
+Replaces: libtiff-dev
+Priority: extra
+Section: main
+Filename: pool/main/libt/libtiff/libtiff_4.3.0_aarch64.deb
+Size: 518836
+SHA256: 1453b5cb4c4937ff44cb89ef4c9d9fc020e7868d09158579106c52705879d5c8
+SHA1: 94c2e01e21eba6135d19d9d2eaf51f3c906b0b80
+MD5sum: 7676adcd625a2539708ab550b9d67ec8
+Description: Support for the Tag Image File Format (TIFF) for storing image data
+
+Package: libtiff-static
+Architecture: aarch64
+Installed-Size: 760
+Maintainer: @termux
+Version: 4.3.0
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.3.0)
+Priority: extra
+Section: main
+Filename: pool/main/libt/libtiff-static/libtiff-static_4.3.0_aarch64.deb
+Size: 152464
+SHA256: ca16b7aba487d1977b36adcd924f38fffa586e713858e737ca97516f3b9a229d
+SHA1: 50ac9596ac64eb82c413f741f60ce8aa1d8b205f
+MD5sum: fe9f7310fab9e7c0b6f956bea6257d94
+Description: Static libraries for libtiff
+
+Package: libtiff-utils
+Architecture: aarch64
+Installed-Size: 708
+Maintainer: @termux
+Version: 4.3.0
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.3.0)
+Priority: extra
+Section: main
+Filename: pool/main/libt/libtiff-utils/libtiff-utils_4.3.0_aarch64.deb
+Size: 240872
+SHA256: e3cef1d33cb8fa1c6ba350237e486cc804fb66135dc9992683d899ba8d9ad82d
+SHA1: d9012776467273b824c67942f81c826e17335e2b
+MD5sum: 027dfbdf63c8da81abbbc0f4d3ca4652
+Description: Tools for working with tiff files
 
 Package: libtool
 Architecture: aarch64
@@ -2390,6 +2691,40 @@ SHA256: ad86441984d44152ff5ec55253c8eb065e8a7f7122b93d3375e462ab085afa9c
 SHA1: eaf975479fe45606779c65ce69950a0b759f986c
 MD5sum: 96d8a651deea2dc81d968e469d87417a
 Description: Static libraries for libuv
+
+Package: libwebp
+Architecture: aarch64
+Installed-Size: 688
+Maintainer: @termux
+Version: 1.2.1
+Homepage: https://github.com/webmproject/libwebp
+Breaks: libwebp-dev
+Depends: giflib, libjpeg-turbo, libpng, libtiff
+Replaces: libwebp-dev
+Priority: extra
+Section: main
+Filename: pool/main/libw/libwebp/libwebp_1.2.1_aarch64.deb
+Size: 196096
+SHA256: 5095f5f5946013cdf1d15a7524d79e55689939442e46fd6f0ee7e553ddeaeb39
+SHA1: e31eacf0a228bb778baec3953a9b9e5c57abbbc3
+MD5sum: 3729ed10d63d597bbca78f659fcf1693
+Description: Library to encode and decode images in WebP format
+
+Package: libwebp-static
+Architecture: aarch64
+Installed-Size: 852
+Maintainer: @termux
+Version: 1.2.1
+Homepage: https://github.com/webmproject/libwebp
+Depends: libwebp (= 1.2.1)
+Priority: extra
+Section: main
+Filename: pool/main/libw/libwebp-static/libwebp-static_1.2.1_aarch64.deb
+Size: 164572
+SHA256: ac7f7fb130aed7e86b5c392a64046bbccc59a683d792f2fc3eab219e845c8265
+SHA1: b0dad43abde86addbb79629dbb8c79b019a7f847
+MD5sum: dac17469118aea0ef6c068b8bb64217c
+Description: Static libraries for libwebp
 
 Package: libx11
 Architecture: aarch64
@@ -3256,6 +3591,22 @@ SHA1: 03e46ba8b624ee3fd7b243951a6599300e1b5deb
 MD5sum: 3ef4dcb2070a868db6b8ed864969158d
 Description: Emulate chroot, bind mount and binfmt_misc for non-root users
 
+Package: protobuf
+Architecture: aarch64
+Installed-Size: 3476
+Maintainer: @termux
+Version: 2:3.18.0
+Homepage: https://github.com/protocolbuffers/protobuf
+Depends: libprotobuf (= 2:3.18.0)
+Priority: extra
+Section: main
+Filename: pool/main/p/protobuf/protobuf_3.18.0_aarch64.deb
+Size: 772988
+SHA256: f2bb9bc965496f768b12f558672fcf80cee7d2ae73d17a6215ad97477e938c59
+SHA1: 8045ba2bd971db03613d20a05aa9059220997515
+MD5sum: de5d3bdcea6ff348b599bb5c685778cb
+Description: Compiler for protocol buffer definition files
+
 Package: psmisc
 Architecture: aarch64
 Installed-Size: 276
@@ -3325,6 +3676,41 @@ SHA256: 4f14a119cdf3bf304bd050836129a4523f575c63cecd0bb7d7f4dca671cd852f
 SHA1: bd322002da85dfda9c4808fa134c7d1c1525b827
 MD5sum: 89b0ba36023f40c787d8f0ab64482cab
 Description: Tkinter support for Python 3
+
+Package: python2
+Architecture: aarch64
+Installed-Size: 18356
+Maintainer: @termux
+Version: 2.7.18-8
+Homepage: http://python.org/
+Breaks: python2-dev
+Depends: libandroid-support, ncurses, readline, libffi, openssl, libbz2, libsqlite, gdbm, ncurses-ui-libs, libcrypt, zlib
+Recommends: clang, make, pkg-config
+Replaces: python2-dev
+Priority: extra
+Section: main
+Filename: pool/main/p/python2/python2_2.7.18-8_aarch64.deb
+Size: 4849628
+SHA256: 33b6299d99788ab45deb974566ecde757ad2e97f7eb80202133ece2a9d15f710
+SHA1: f5e9ca35599d3b464d37d6b0c06285e8a4ab5ca8
+MD5sum: a503ece43370431b3ee9d33d5e73b1e4
+Description: Python 2 programming language intended to enable clear programs
+
+Package: python2-static
+Architecture: aarch64
+Installed-Size: 10004
+Maintainer: @termux
+Version: 2.7.18-8
+Homepage: http://python.org/
+Depends: python2 (= 2.7.18-8)
+Priority: extra
+Section: main
+Filename: pool/main/p/python2-static/python2-static_2.7.18-8_aarch64.deb
+Size: 1759296
+SHA256: dceabb0aa55c7c10207e52f9b0bfd3534ced977d596f33b5f0649e77eceb93c6
+SHA1: da5d5295f03437072099be221045a4c46c8b196c
+MD5sum: 8c330b3974acc02d00d90d8c683d3065
+Description: Static libraries for python2
 
 Package: readline
 Architecture: aarch64
@@ -3663,6 +4049,22 @@ SHA256: 703a38096fb3062ede9546321f94a5efbca056a3729a0b1fe3f7edfd66a2bc6b
 SHA1: 48a1ba5b9de4b949af6f73191d027088053794d5
 MD5sum: 91cbdfae4eb0a2ca40c96d8de1305119
 Description: Basic system tools for Termux
+
+Package: texinfo
+Architecture: aarch64
+Installed-Size: 7788
+Maintainer: @termux
+Version: 6.8
+Homepage: https://www.gnu.org/software/texinfo/
+Depends: libiconv, ncurses, perl, gawk
+Priority: extra
+Section: main
+Filename: pool/main/t/texinfo/texinfo_6.8_aarch64.deb
+Size: 811288
+SHA256: 24011d75e52f413b592e6d925522982f9ef70fc2f9484f6bb3048915f06849a5
+SHA1: 561537b6291e0d460e724ac7e6506c11370e83af
+MD5sum: fd3140ae596fb7eb3997bcc5678d85cb
+Description: Documentation system for on-line information and printed output
 
 Package: tk
 Architecture: aarch64
