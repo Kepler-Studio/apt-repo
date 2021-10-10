@@ -152,6 +152,22 @@ SHA1: 1d28a58e9590ef5130b51c5e1f21516baa2ca3c7
 MD5sum: 41028d6ad456bc19673ce61cd4d84203
 Description: An implementation of AsciiDoc in Ruby
 
+Package: autoconf
+Architecture: all
+Installed-Size: 3528
+Maintainer: @termux
+Version: 2.71-2
+Homepage: https://www.gnu.org/software/autoconf/autoconf.html
+Depends: m4, make, perl
+Priority: extra
+Section: main
+Filename: pool/main/a/autoconf/autoconf_2.71-2_all.deb
+Size: 610544
+SHA256: 96aa98f9cee9d6e5bfc55d9abd6ee108971a7729f5e619fd8adc0c8bcff3ebe9
+SHA1: 0c0f9f780fa57dce4d837c54aba13f9adead6b95
+MD5sum: 74381f1495dfad57a3af113d123239f1
+Description: Creator of shell scripts to configure source code packages
+
 Package: bash
 Architecture: aarch64
 Installed-Size: 3964
@@ -2339,6 +2355,38 @@ SHA256: df76034557f211a026cab2327dae87d73ad3918f1201118600db639fb3e5ec6e
 SHA1: 4a692f994d5da9b6ab098f437910405b9b082d45
 MD5sum: 2e28e64ad71f9f04438e12c162e129ab
 Description: Lossless data compressor similar to gzip and bzip2
+
+Package: m4
+Architecture: aarch64
+Installed-Size: 592
+Maintainer: @termux
+Version: 1.4.19
+Homepage: https://www.gnu.org/software/m4/m4.html
+Priority: extra
+Section: main
+Filename: pool/main/m/m4/m4_1.4.19_aarch64.deb
+Size: 183304
+SHA256: 5ecbf6bc9030329ee738e698bb71cb34de12ee8e21d552cb08b80a514aad7724
+SHA1: be5430c1960c8c30a942f00fcd9814b64738298e
+MD5sum: f8a28b61d90a33c6e497a52668f21787
+Description: Traditional Unix macro processor
+
+Package: make
+Architecture: aarch64
+Installed-Size: 816
+Maintainer: @termux
+Version: 4.3-1
+Homepage: https://www.gnu.org/software/make/
+Breaks: make-dev
+Replaces: make-dev
+Priority: extra
+Section: main
+Filename: pool/main/m/make/make_4.3-1_aarch64.deb
+Size: 218820
+SHA256: 8a27dd0d8b78d3f2ffa098df9ff8559064f74d1f038492f3490fe1fc4ae712a4
+SHA1: b96b1cfaef0d9dd45237e7dbc5509be5aee407fe
+MD5sum: 65155acfb10c32fdefd7c6d172e79fd8
+Description: Tool to control the generation of non-source files from source files
 
 Package: nano
 Architecture: aarch64
