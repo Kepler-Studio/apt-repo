@@ -162,11 +162,27 @@ Depends: m4, make, perl
 Priority: extra
 Section: main
 Filename: pool/main/a/autoconf/autoconf_2.71-2_all.deb
-Size: 610544
-SHA256: 96aa98f9cee9d6e5bfc55d9abd6ee108971a7729f5e619fd8adc0c8bcff3ebe9
-SHA1: 0c0f9f780fa57dce4d837c54aba13f9adead6b95
-MD5sum: 74381f1495dfad57a3af113d123239f1
+Size: 610656
+SHA256: d230291494bd02adaed5ba8fbe01f2ee85d85e8cbba1ee7611063b6e74c48ccc
+SHA1: cec50abb55e5c846442087ccea42048391c1c75f
+MD5sum: b6abfe3c48fa0e88a119fa3907fe5068
 Description: Creator of shell scripts to configure source code packages
+
+Package: automake
+Architecture: all
+Installed-Size: 2692
+Maintainer: @termux
+Version: 1.16.4
+Homepage: https://www.gnu.org/software/automake/
+Depends: autoconf
+Priority: extra
+Section: main
+Filename: pool/main/a/automake/automake_1.16.4_all.deb
+Size: 551272
+SHA256: 7beff21fbfd409c94814035cf6bff89d1762375c9a6da4df2ba90e97d3a79f09
+SHA1: a60665bb1397ea57003054602057ba7a92e130bc
+MD5sum: aa9a8d2df9df79d8cad2fec07f812724
+Description: Tool for automatically generating Makefile.in files
 
 Package: bash
 Architecture: aarch64
@@ -187,6 +203,22 @@ SHA256: 7a3f3af1d4402a07a369c50e8a7d0f5fad387dc9176bf81802b303db04e614e4
 SHA1: be8b06a3dd9d296855fc2fe95ef5d5779e1d8497
 MD5sum: d23e4281d5647b980b307ab4f8903eed
 Description: A sh-compatible shell that incorporates useful features from the Korn shell (ksh) and C shell (csh)
+
+Package: bc
+Architecture: aarch64
+Installed-Size: 192
+Maintainer: @termux
+Version: 1.07.1-1
+Homepage: https://www.gnu.org/software/bc/
+Depends: readline,flex
+Priority: extra
+Section: main
+Filename: pool/main/b/bc/bc_1.07.1-1_aarch64.deb
+Size: 72804
+SHA256: f22b55107e7f721169f963d05a0399e3ccf5765104742b02ae07528c0ec2b00a
+SHA1: 5dfc6e32e1bd84836122c46434e41b6b45750300
+MD5sum: 547c24f02d5aedd5d86cb7af902ec012
+Description: Arbitrary precision numeric processing language
 
 Package: binutils
 Architecture: aarch64
@@ -221,6 +253,38 @@ SHA256: 84d84f3b2a371dadf517183faae8d688c7bb4b0791254c2b619d1ff9a1a76c68
 SHA1: 36a416313adc73df0c6f8179ab99228eede4e52e
 MD5sum: e80b7a3d6d03f69eeadccd829b49fe1a
 Description: gold linker
+
+Package: bison
+Architecture: aarch64
+Installed-Size: 2464
+Maintainer: @termux
+Version: 3.8.1
+Homepage: https://www.gnu.org/software/bison/
+Depends: m4
+Priority: extra
+Section: main
+Filename: pool/main/b/bison/bison_3.8.1_aarch64.deb
+Size: 518920
+SHA256: 6f3fe6317d7c4d2f49778120849b9f29b6a8ff642e61f9e5169e936e05f4a927
+SHA1: 1a37d3eb5f8ee109b00b38a88a15d60b673c12a1
+MD5sum: 9be8bda9cae5d1378a752683dd88f965
+Description: General-purpose parser generator
+
+Package: bison-static
+Architecture: aarch64
+Installed-Size: 4
+Maintainer: @termux
+Version: 3.8.1
+Homepage: https://www.gnu.org/software/bison/
+Depends: bison (= 3.8.1)
+Priority: extra
+Section: main
+Filename: pool/main/b/bison-static/bison-static_3.8.1_aarch64.deb
+Size: 1484
+SHA256: e036e4e1be2b37158c7727393e89b074348e5cf18ab2e3fe20e64f86b7cecf39
+SHA1: 1fc0e4a79ede4d69a0d2439aefb7b2c13f7d9397
+MD5sum: 40a47167aa524917e10c5cbd620d06ab
+Description: Static libraries for bison
 
 Package: bzip2
 Architecture: aarch64
@@ -506,6 +570,40 @@ SHA256: acaeedf8c302cab8219b9dbc21fb2fa9b7e6fade3eb7ece2d160f4947633f3a8
 SHA1: d46e054a7b6547b90161978c15865797e5939293
 MD5sum: 1fd3a0be629d2991ed0d15531da17c15
 Description: Utilities to find files meeting specified criteria and perform various actions on the files which are found
+
+Package: flex
+Architecture: aarch64
+Installed-Size: 840
+Maintainer: @termux
+Version: 2.6.4-3
+Homepage: https://github.com/westes/flex
+Depends: m4
+Conflicts: flex-dev
+Replaces: flex-dev
+Priority: extra
+Section: main
+Filename: pool/main/f/flex/flex_2.6.4-3_aarch64.deb
+Size: 198616
+SHA256: d784b5737515a657d8dcb1019ab7e15ceaf2df6ee304b0c79de5bd4cd527377c
+SHA1: ff4a29aa8b779727c5d98dbc3f33ea317f0ff2d0
+MD5sum: 1429a437e98b0147345f77946eec9736
+Description: Fast lexical analyser generator
+
+Package: flex-static
+Architecture: aarch64
+Installed-Size: 8
+Maintainer: @termux
+Version: 2.6.4-3
+Homepage: https://github.com/westes/flex
+Depends: flex (= 2.6.4-3)
+Priority: extra
+Section: main
+Filename: pool/main/f/flex-static/flex-static_2.6.4-3_aarch64.deb
+Size: 1852
+SHA256: a739050dd48fdeef104af7baf2d6c7f51737c68afae7d0726ce0f6aa897803d7
+SHA1: fc08dc883a0928b390b42ae1ce3374b6b901cf32
+MD5sum: bb1fe786f6d3968dc76935f6929062a4
+Description: Static libraries for flex
 
 Package: fontconfig
 Architecture: aarch64
@@ -2365,10 +2463,10 @@ Homepage: https://www.gnu.org/software/m4/m4.html
 Priority: extra
 Section: main
 Filename: pool/main/m/m4/m4_1.4.19_aarch64.deb
-Size: 183304
-SHA256: 5ecbf6bc9030329ee738e698bb71cb34de12ee8e21d552cb08b80a514aad7724
-SHA1: be5430c1960c8c30a942f00fcd9814b64738298e
-MD5sum: f8a28b61d90a33c6e497a52668f21787
+Size: 183260
+SHA256: 18f41202f308f9201beb2704024c8ad1331aa140e3ce1a5aba22510ecdf99517
+SHA1: ade6690931d0027ff94ebd5140a647d0c6069874
+MD5sum: b15ae0f7742c8c9f40c449e7a81f7f7a
 Description: Traditional Unix macro processor
 
 Package: make
@@ -2382,10 +2480,10 @@ Replaces: make-dev
 Priority: extra
 Section: main
 Filename: pool/main/m/make/make_4.3-1_aarch64.deb
-Size: 218820
-SHA256: 8a27dd0d8b78d3f2ffa098df9ff8559064f74d1f038492f3490fe1fc4ae712a4
-SHA1: b96b1cfaef0d9dd45237e7dbc5509be5aee407fe
-MD5sum: 65155acfb10c32fdefd7c6d172e79fd8
+Size: 219040
+SHA256: 73f3cd55fe7744be4560689c56df0d8d99594d041102b2558040efa4ad7dfc23
+SHA1: 67876eb066cb6c216c5cccffd59c305674abf4a0
+MD5sum: b5846016d8ab3cc2e11fa883ec5cc4b4
 Description: Tool to control the generation of non-source files from source files
 
 Package: nano
