@@ -407,6 +407,40 @@ SHA1: 4083507149480963f62e5ef2e3aaff3fc507367f
 MD5sum: 74a1c5eabcd7b01ab9a53ad43c1d6408
 Description: Debian package management system
 
+Package: file
+Architecture: aarch64
+Installed-Size: 7032
+Maintainer: @termux
+Version: 5.40
+Homepage: https://darwinsys.com/file/
+Breaks: file-dev
+Depends: zlib
+Replaces: file-dev
+Priority: extra
+Section: main
+Filename: pool/main/f/file/file_5.40_aarch64.deb
+Size: 314568
+SHA256: c07d6540da6322f069e4f475aff2c262de810270f8651ac516b7c84cfe14b4cc
+SHA1: 284b6d11a9e05f0cb2b508ba480a46c5bac5263c
+MD5sum: 7794068c4b3731c36264545f336c6dab
+Description: Command-line tool that tells you in words what kind of data a file contains
+
+Package: file-static
+Architecture: aarch64
+Installed-Size: 228
+Maintainer: @termux
+Version: 5.40
+Homepage: https://darwinsys.com/file/
+Depends: file (= 5.40)
+Priority: extra
+Section: main
+Filename: pool/main/f/file-static/file-static_5.40_aarch64.deb
+Size: 61536
+SHA256: 67f1f99b5dadf1560e66d2c5437e5a22bdc7ca9c653eba979632afb0e00bbd05
+SHA1: e339ff334faeb4663767add96634edb5ad637d98
+MD5sum: d614402750230b906964397461eced3e
+Description: Static libraries for file
+
 Package: findutils
 Architecture: aarch64
 Installed-Size: 736
@@ -619,10 +653,10 @@ Replaces: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
 Priority: extra
 Section: main
 Filename: pool/main/g/gnupg/gnupg_2.3.2-1_aarch64.deb
-Size: 1296420
-SHA256: f57a37093604a5517a4e89d2554d0fff40b8e751b829b56f0008dedf3f8ca01c
-SHA1: 840f7f88cc5c42470485cd3b0de42e88f68cebd7
-MD5sum: 1621d0d66050204c7ce74ca872bf6e68
+Size: 1296268
+SHA256: f23c9c84f97db519460c92163052fcd64cb04c50fdb687467ec224d161093d31
+SHA1: b816505a73941f58d7e6caaf7bf5f5a996042b8e
+MD5sum: 8e62518870a084995d554036cec52d08
 Description: Implementation of the OpenPGP standard for encrypting and signing data and communication
 
 Package: gnutls
@@ -651,10 +685,10 @@ Depends: libassuan, libbz2, libgcrypt, libgpg-error, libnpth, zlib
 Priority: extra
 Section: main
 Filename: pool/main/g/gpgv/gpgv_2.3.2-1_aarch64.deb
-Size: 157772
-SHA256: 59963adfe1558b498b2d4292b6846412ac0cd0999840ced4470fa53e6ace146a
-SHA1: bc521c326a4202ad70560170bfb40a8ec1aed50e
-MD5sum: 4d3abd91ae465b4c85369851dd17d6bb
+Size: 157792
+SHA256: 5f1cdeabb4979add865964b4e5342845986e3468ef9adc13c876d6ddc3ca0fe4
+SHA1: b2565047660d62f1ab4009ae63f469ac59dc2757
+MD5sum: cc0a487e1b7ceb591060ce1d2925dc00
 Description: GNU privacy guard - signature verification tool
 
 Package: grep
