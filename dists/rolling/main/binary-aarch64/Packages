@@ -119,6 +119,23 @@ SHA1: b1efe291cb550abe7d7fd8ecd8be77658a1c91bb
 MD5sum: ed00c3988016a1bcda61547786995cef
 Description: APT transport for anonymous package downloads via Tor
 
+Package: asciidoc
+Architecture: aarch64
+Installed-Size: 1032
+Maintainer: @termux
+Version: 9.1.0
+Homepage: https://asciidoc.org
+Depends: docbook-xsl, libxml2-utils, python, xsltproc
+Suggests: w3m
+Priority: extra
+Section: main
+Filename: pool/main/a/asciidoc/asciidoc_9.1.0_aarch64.deb
+Size: 170680
+SHA256: cea8b79a721d8c5c046128e07ec9ddc635695ed4ede1d77170b22d3a42dbe2ee
+SHA1: 325b7bef8d98c47697829bc6ccfc40ba7ab8c9cc
+MD5sum: 82b7cfd3b8e1658b82b588fd5b1081ea
+Description: Text document format for short documents, articles, books and UNIX man pages.
+
 Package: bash
 Architecture: aarch64
 Installed-Size: 3964
@@ -589,10 +606,10 @@ Replaces: gdbm-dev
 Priority: extra
 Section: main
 Filename: pool/main/g/gdbm/gdbm_1.20_aarch64.deb
-Size: 106640
-SHA256: 3a35baaeb067c88883f4bd248b69747f181950e1c504c39f4132fcb827ea78cf
-SHA1: 47cb57bdd92ee845ffc6eae9f79104e56a259fc6
-MD5sum: 2be799a5b8417a3b3f409dc0df545eb3
+Size: 106676
+SHA256: 4e0daa8f174c71c5a5a1412a1004c40ce565817e4516f4abc52b4aed19503d11
+SHA1: b65dc6cfe7ab11bcf98b42faada8013c80082243
+MD5sum: 4b011ef98b7bfb54a0428145706c2d00
 Description: Library of database functions that use extensible hashing
 
 Package: gdbm-static
@@ -605,10 +622,10 @@ Depends: gdbm (= 1.20)
 Priority: extra
 Section: main
 Filename: pool/main/g/gdbm-static/gdbm-static_1.20_aarch64.deb
-Size: 27236
-SHA256: 04947b8b1f350ba424770870a3cd125a71d2a42eeff8cf4d8b07c4ed5eddcf4a
-SHA1: 2d875faf19a352efcb678a753a1f730f5cc7fa59
-MD5sum: 967f1718fb84428cc055a5d2adac6315
+Size: 27248
+SHA256: 6675b2b0625e13d9865aaed34610d5eaed6b99c4c2e20ac9b1523bf6286b1357
+SHA1: a210881ffd1c43b3a0f6d31e37e10d56a66ed739
+MD5sum: eb7330e1d0fa174340d8ea0319b1a646
 Description: Static libraries for gdbm
 
 Package: git
@@ -2650,10 +2667,10 @@ Suggests: python-tkinter
 Priority: extra
 Section: main
 Filename: pool/main/p/python/python_3.9.7_aarch64.deb
-Size: 7996276
-SHA256: e8e58228eab768286a11beb4a01f3faa1372c731661bdc6ba7c19fe9fd3d8940
-SHA1: 2c06f367079fb5bad57ed21d8d768a71acd544c7
-MD5sum: 0e6b2499ae416ef4c5fd33ad7d5df80a
+Size: 7996432
+SHA256: 7f111eefae9fc526d9b8f2790124ca625c198435c0fd45f3d08ff5cfb01c0fb0
+SHA1: ea88d15b37cf5a01e9a882f4b8f1b3e5de6028bf
+MD5sum: 110d6699f7af456f7809b58bb4c279ae
 Description: Python 3 programming language intended to enable clear programs
 
 Package: python-static
@@ -2666,10 +2683,10 @@ Depends: python (= 3.9.7)
 Priority: extra
 Section: main
 Filename: pool/main/p/python-static/python-static_3.9.7_aarch64.deb
-Size: 3575348
-SHA256: a6e1749f1e94510dbe2fc76030ae1f3a7afb93fd05bcf46fd561dec657603f77
-SHA1: 641999fc45f4fc465d91995cc8f61fab516b8d01
-MD5sum: 91bd220f0152a6a4786e0101da37810b
+Size: 3571808
+SHA256: 5252d72b98bc10d07aaa92cbe12f019b9b3d56ffa58d579635f68987503aadaf
+SHA1: 88a56f86a6f44c68fe7d4163ed919d010303dc20
+MD5sum: d0c3eab30c0d33e075fdd8fc48ae74b2
 Description: Static libraries for python
 
 Package: python-tkinter
@@ -2682,10 +2699,10 @@ Depends: tk, python (= 3.9.7)
 Priority: extra
 Section: main
 Filename: pool/main/p/python-tkinter/python-tkinter_3.9.7_aarch64.deb
-Size: 874948
-SHA256: 1e0d7c1da0e4bbf9371c5c47396aa262e333d65ca744f22d41c205f379b5bc13
-SHA1: fab03b8d3e8b21e3dd98a233d2a95d5c1d1245c3
-MD5sum: f09ad1c1f52db0318bed85bdd59d75aa
+Size: 874956
+SHA256: 4f14a119cdf3bf304bd050836129a4523f575c63cecd0bb7d7f4dca671cd852f
+SHA1: bd322002da85dfda9c4808fa134c7d1c1525b827
+MD5sum: 89b0ba36023f40c787d8f0ab64482cab
 Description: Tkinter support for Python 3
 
 Package: readline
@@ -2903,6 +2920,22 @@ SHA256: 6493ff3c026599ab5936715278e0bff6f186bda0123a92a91151196e1668d22c
 SHA1: 5a7f936f13e5cac5d11588574a2a5357eb474615
 MD5sum: c44f0ec9e73656d5ab9f4902a209c4f7
 Description: Powerful but easy to learn dynamic programming language
+
+Package: termux-exec
+Architecture: aarch64
+Installed-Size: 12
+Maintainer: @termux
+Version: 1:0.9
+Homepage: https://github.com/termux/termux-exec
+Essential: yes
+Priority: extra
+Section: main
+Filename: pool/main/t/termux-exec/termux-exec_0.9_aarch64.deb
+Size: 3600
+SHA256: dc57c482e48b1135a7d90ac3f55cf397cb4fefc850a1b56f9dea77271dc13ef6
+SHA1: efbee59a7ff6344d3388c4fae99c750d71afbddc
+MD5sum: b60604d4b4a588cc2d57bd73f8f4b0e8
+Description: An execve() wrapper to make /bin and /usr/bin shebangs work
 
 Package: termux-licenses
 Architecture: all
